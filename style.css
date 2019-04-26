@@ -1,0 +1,80 @@
+body {
+  background-color: red;
+}
+
+@media only screen and (max-width:300px) {
+  body {
+    background-color: red;
+   }
+  }
+
+@media only screen and (min-width: 300px) and (max-width: 768px) {
+  body {
+    background-color: green;
+  }
+  #small {
+    width: auto;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    #medium {
+      width: 50%;
+      padding: 10px;
+      height: 300px; /* Should be removed. Only for demonstration */
+    }
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+      }
+      #large {
+        width: 25%;
+        padding: 10px;
+        height: 300px; /* Should be removed. Only for demonstration */
+      }
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+  }
+
+@media only screen and (min-width:768px){
+  body {
+    background-color: blue;
+  }
+  #small, #medium, #large {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+#small, #medium, #large
+{
+  color: white;
+  font-family: 'Gugi';
+}
+
+#small {
+  font-size: 8pt;
+}
+
+#medium {
+  font-size: 10pt;
+}
+
+#large {
+  font-size: 12pt;
+}
